@@ -1,0 +1,10 @@
+<h1>Welcome!!</h1>
+<p>
+  Please Enter the Url
+</p>
+<%= form_for :short_url, url: urls_path do |f| %>
+  <%= f.label :original_url %>
+  <%= f.text_field :original_url %>
+
+  <%= f.submit "Create Shortner" %>
+<% end %>
